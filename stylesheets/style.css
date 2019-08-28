@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/*
+Theme Name: Trainer
+Theme URI: 
+Version: Development preview
+License: GNU
+License URI:
+Author: Michał Zwierzyński
+Author URI: NONE
+Description: NONE
+*/
+@keyframes splash {
+  from {
+    background: rgba(208, 255, 173, 0);
+  }
+  to {
+    background: rgba(208, 255, 173, 0.9);
+  }
+}
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  background: #FEFEFE;
+  text-align: center;
+}
+
+#slider .container-fluid {
+  padding: 0;
+  margin-top: 84px;
+  margin-bottom: 40px;
+}
+#slider .container-fluid img {
+  height: 650px;
+  width: 100%;
+}
+
+.btn, #main-recent-products .row .btn {
+  border-radius: 0;
+  text-transform: uppercase;
+  margin: 40px 0;
+  padding: 5px 8px;
+  font-size: 19px;
+}
+
+.section-title {
+  text-align: center;
+  letter-spacing: -0.5px;
+  font-weight: 700;
+  padding: 15px 0;
+  font-size: 29px;
+}
+
+hr {
+  margin: 40px 0;
+}
+
+.pre-nav {
+  border-bottom: 1px solid #CCC;
+}
+.pre-nav .pre-nav-cart {
+  line-height: 15px;
+  margin: 8px 0;
+  text-align: right;
+}
+
+.navbar {
+  background: #FFF;
+}
+.navbar li:nth-child(-n+4):hover {
+  background: #d0ffad;
+}
+.navbar .navbar-form {
+  margin: 4px 0;
+}
+.navbar .form-control {
+  margin-top: 4px;
+  border-radius: 0;
+  margin-left: 70px;
+  width: 300px;
+}
+.navbar .btn, .navbar #main-recent-products .row .btn, #main-recent-products .row .navbar .btn {
+  margin-top: 4px;
+  margin-bottom: 0px;
+  padding: 2.5px 7px;
+}
+.navbar .btn:hover, .navbar #main-recent-products .row .btn:hover, #main-recent-products .row .navbar .btn:hover {
+  background-color: #d0ffad;
+}
+.navbar .navbar-brand {
+  background-image: url(../images/trainer-logo.png);
+  width: 100px;
+  height: 32.5px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  margin-top: 10px;
+  margin-left: 5px;
+}
+
+#main-categories img {
+  width: 320px;
+  height: 320px;
+  position: relative;
+}
+#main-categories .img-splash {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 320px;
+  height: 320px;
+  background: rgba(208, 255, 173, 0);
+}
+#main-categories .text-splash {
+  text-transform: uppercase;
+  position: absolute;
+  font-size: 72px;
+  font-weight: 700;
+  color: #444;
+  margin: 0 auto;
+  left: 170px;
+  right: 0;
+  top: 180px;
+  line-height: 85%;
+  opacity: 0;
+}
+#main-categories a:hover .img-splash {
+  animation-name: splash;
+  animation-duration: 0.6s;
+  background: rgba(208, 255, 173, 0.9);
+}
+#main-categories a:hover .text-splash {
+  transition: opacity 0.6s ease-out;
+  opacity: 1;
+}
+#main-categories h5 {
+  padding: 10px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#main-recent-products .row .btn {
+  background: #000;
+  color: #FFF;
+  margin: 0 0 10px 0;
+  padding: 8px 11px;
+  font-size: 14px;
+}
+#main-recent-products .row .btn:hover {
+  background: #333;
+}
+#main-recent-products img {
+  width: 240px;
+}
+
+#footer .btn, #footer #main-recent-products .row .btn, #main-recent-products .row #footer .btn {
+  padding: 10px;
+  background: #d0ffad;
+  border-color: #c0ee9e;
+  color: #333;
+}
+#footer #newsettler .form-control {
+  border-radius: 0;
+  padding: 23.5px 10px;
+  font-size: 18px;
+}
+#footer #newsettler .form-inline {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+#footer #main-footer {
+  background: #333;
+}
+#footer #main-footer .container {
+  padding: 60px 0;
+  color: #d0ffad;
+  font-size: 22px;
+}
+#footer #main-footer .container ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 16px;
+}
+#footer #main-footer .container ul a {
+  color: #FFF;
+  text-decoration: none;
+}
+#footer #main-footer .container ul li {
+  padding: 5px 0;
+}
+#footer #main-footer .container ul li:last-child {
+  padding-bottom: 10px;
+}
+#footer #main-footer .contact-icons {
+  color: #FFF;
+}
+#footer #main-footer .social-icons {
+  padding: 20px 3px;
+}
+#footer #main-footer i {
+  color: #FFF;
+  font-size: 17px;
+}
+#footer #main-footer .col-sm-4, #footer #main-footer .col-md-4 {
+  border-right: 1px solid grey;
+  height: 200px;
+}
+#footer #main-footer .col-sm-4:last-child, #footer #main-footer .col-md-4:last-child {
+  border-right: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+  #footer #main-footer .col-sm-4, #footer #main-footer .col-md-4 {
+    border: 0px solid grey;
+  }
+
+  .navbar .form-control {
+    margin-top: 0px;
+    border-radius: 0;
+    margin: 0;
+    width: 100%;
+  }
+}
